@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline Notice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #FF6FD8, #3813C2);
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(0,0,0,0.4);
+      padding: 50px 30px;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      max-width: 450px;
+      width: 90%;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 2; /* more spacing between lines */
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+
+    .emoji {
+      font-size: 1.5rem;
+      vertical-align: middle;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 35px;
+      background: linear-gradient(90deg, #25D366, #128C7E);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.5rem; }
+      p { font-size: 1rem; }
+      .btn { padding: 12px 25px; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Heyyy 👋</h1>
+    <p>
+  I’m taking a little break from <span class="emoji">📸</span> Instagram… maybe for a week, maybe longer 😎.<br>
+
+  WhatsApp <span class="emoji">💬</span> isn’t planned, but I might go offline there too 🤫.<br><br>
+
+  For anyone who really needs me (though there probably won’t be any 😏), if there is, just shoot me a text 👇
+</p>
+
+
+    <a href="sms:+917025138765" class="btn">Text Me</a>
+  </div>
+</body>
+</html>
