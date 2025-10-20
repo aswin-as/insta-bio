@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #FF6FD8, #3813C2);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    .post-card {
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+
+    .post-card:hover {
+      transform: scale(1.02);
+    }
+
+    .post-card h2 {
+      margin-bottom: 10px;
+    }
+
+    .post-card p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background: linear-gradient(90deg, #25D366, #128C7E);
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    @media(max-width: 480px) {
+      h1 { font-size: 1.5rem; }
+      .post-card h2 { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Blog 📝</h1>
+
+<div class="post-card">
+  <h2>First Thoughts 📝</h2>
+  <p>My first blog — just sharing my thoughts, personal experiences, and little adventures. Read on!</p>
+  <a href="post1.html" class="btn">Read More</a>
+</div>
+
+
+
+    <!-- Add more posts by copying the post-card div -->
+  </div>
+</body>
+</html>
